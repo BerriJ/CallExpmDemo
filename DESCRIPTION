@@ -1,0 +1,19 @@
+Package: CallExpmDemo
+Type: Package
+Title: Demonstrates how to call C functions of foreign packages in Rcpp
+Version: 1.0
+Date: 2021-06-06
+Author: Jonathan Berrisch
+Maintainer: Jonathan Berrisch <jonathan@berrisch.biz>
+Description: This package is an example of importing C functions of foreign R packages into Rcpp. However, Note that these Functions have to be Registered in an init.c to be callable by other packages. 
+License: GPL-3
+Encoding: UTF-8
+Imports: Rcpp (>= 1.0.5), expm
+LinkingTo: Rcpp, RcppArmadillo
+URL: https://github.com/BerriJ/CallExpmDemo
+BugReports: https://github.com/BerriJ/CallExpmDemo/issues
+RoxygenNote: 7.1.1
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/testthat/parallel: true
